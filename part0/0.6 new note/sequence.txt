@@ -1,0 +1,13 @@
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+server-->browser: 201 code
+
+
+
+
+
+
+
+
+link: perhaps it doesnt work because of expiration time
+
+https://www.websequencediagrams.com/?lz=YnJvd3Nlci0-c2VydmVyOiBIVFRQIFBPU1QgaHR0cHM6Ly9zdHVkaWVzLmNzLmhlbHNpbmtpLmZpL2V4YW1wbGVhcHAvbmV3X25vdGVfc3BhCgBDBi0tPgBUBzogMjAxIGNvZGUKCg&s=default

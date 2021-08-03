@@ -1,0 +1,32 @@
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note
+server-->browser: 302 code (redirect)
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/notes
+server-->browser: HTML-code
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+server-->browser: main.css
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.js
+server-->browser: main.js
+browser->server: HTTP GET https://studies.cs.helsinki.fi/favicon.ico
+server-->browser: favicon.ico
+
+note over browser:
+browser starts executing js-code
+that requests JSON data from server 
+end note
+
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
+server-->browser: [{ content: "HTML is easy", date: "2019-05-23" }, ...]
+
+note over browser:
+browser executes the event handler
+that renders notes to display
+end note
+
+
+
+
+
+Link but perhaps it doesnt work because of expiration time
+
+LINK: https://www.websequencediagrams.com/?lz=YnJvd3Nlci0-c2VydmVyOiBIVFRQIFBPU1QgaHR0cHM6Ly9zdHVkaWVzLmNzLmhlbHNpbmtpLmZpL2V4YW1wbGVhcHAvbmV3X25vdGUKAD8GLS0-AFAHOiAzMDIgY29kZSAocmVkaXJlY3QpCgBeFkdFAEYtb3RlcwBdE0hUTUwtY29kZQAhRW1haW4uY3MAVRQAEgkAH0lqAE4ZagArO2Zhdmljb24uaWNvAIMMEwASDApub3RlIG92ZXIgAIM3CACDIwggc3RhcnRzIGV4ZWN1dGluZyBqcwCCYAZ0aGF0IHJlcXVlc3RzIEpTT04gZGF0YSBmcm9tIACETgYgCmVuZCAAhBsFAIM2RWRhdGEuanNvbgCEXBNbeyBjb250ZW50OiAiSFRNTCBpcyBlYXN5IiwgZGF0ZTogIjIwMTktMDUtMjMiIH0sIC4uLl0AgV4dAIFuBmVzIHRoZSBldmVudCBoYW5kbGVyAIF1CG5kZXJzAIFcBXMgdG8gZGlzcGxheQCBbQk&s=default
+
